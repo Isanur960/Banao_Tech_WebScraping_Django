@@ -1,0 +1,22 @@
+{
+"@context": "http://schema.org",
+"@type": "JobPosting",
+"description": "<p><p>Industry - IT-Software / Software Services<br><br>Category - IT &amp; Systems<br><br> Job Type - Permanent <br><br>Job Description :</p><p><br></p><p>-  You would be part of our Marine business unit</p><br><p> -  You will bring experience, knowledge and networks from the industry and sell our cutting-edge technology and innovative solutions to both our current but especially to our future customers</p><br><p> -  You will be in a crucial role in growing our business in Marine and be responsible for managing the entire sales process from finding leads to closing deals</p><br>Client Details :<br><br>Our client are a leading developer of digital and intelligent 3D-based design, engineering, and information management software solutions for the marine, process, and construction industries. Today they are a team of around 250 proactive, engaged and growth-minded people worldwide, the selected developer and provider of software solutions for over 6000 customers in 60 countries.<br><br>Description :<br><br>-  Own the sales process from the beginning to the very end<br><br> <p>-  Actively strengthen our presence and market share as the top solution provider for Marine</p><br><p> -  Organise and participate all kinds of events and exhibitions to get our brand known</p><br>Profile :<br><br>-  You are a real sales enthusiast ready to roll your sleeves and pick up the phone.<br><br> <p>-  You love to create sales opportunities, and you have the needed persistence to win the deals.</p><br><p> -  Have proven track record of successful sales development</p><br> -  Have existing networks in shipyards, ship design and/or ship engineering companies<br><br>Job Offer :<br><br>-  The offer on the table is an opportunity to work for a stable, profitable European software company with a long history and a great future ahead.<br><br> -  Great team with individuals with long careers amongst us, and a very low turnover rate<br><br> -  Our employee engagement rate is high and as an employer we are reliable and trustworthy.<br><br> -  Our growing business gives you lots of possibilities to delight our customers and develop professionally.<br><br> -  In addition to competitive benefits, we have open and friendly culture. We believe in succeeding together, keeping our work agile and getting things done.<br><br> -  We want to be continuously improving and having fun along the way.<br><br> -  On top of this we also offer you the possibility to travel within India, and occasionally internationally.<br><br>To apply online please click the 'Apply' button below. For a confidential discussion about this role please contact Shobhit Patni on +91 22 4236 3314.<br><br> Contact - Shobhit Patni - +91 22 4236 3314<br><br> The Apply Button will redirect you to website. Please apply there as well<br><p></p></p>",
+"title": "Sales Manager - Marine Business Software (5-15 yrs)",
+"industry": "IT & Systems",
+"experienceRequirements": "5-15 yrs.",
+"skills": "IT Product Sales, IT Sales, Solutions Sales",
+"datePosted": "09 Aug 2021",
+"validThrough": "09 Feb 2022",
+"hiringOrganization": "Michael Page",
+"employmentType":"FULL_TIME",
+"qualifications": "Any Graduate",
+"jobLocation": {
+    "@type": "Place",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressRegion": "Maharashtra",
+        "addressLocality": "Mumbai" }
+    }
+}

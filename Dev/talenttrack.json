@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org",
+  "@type": "JobPosting",
+  "datePosted": "2021-08-11",
+  "description": "Aman Darya Productions provides a platform to all singers from all genres.<br /> We are looking for male and female professional singers for our production house.<br />Send a scratch of our any original song from Aman Darya Band on YouTube as audition video.<br />",
+  "employmentType": "full time",
+  "industry": "Entertainment Industry",
+  "validThrough": "2021-09-11T00:00",
+  "baseSalary":{
+   "@type": "MonetaryAmount",
+   "currency": "INR",
+   "value":"As per profile"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chandigarh",
+      "addressRegion": "IN",
+      "streetAddress":"Chandigarh"
+    }
+  },
+  "hiringOrganization" : {
+    "@type" : "Organization",
+	"name":"aman darya productions",
+	"logo": "https://www.talentrack.in/images/ext/company-logo/talentrack_logo.png"
+  },
+  "occupationalCategory": "SINGER",
+  "title": "Looking For Professional Singers For Our Production House"
+
+}

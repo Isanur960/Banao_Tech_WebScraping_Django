@@ -1,0 +1,99 @@
+{
+    "@context":"http:\/\/schema.org",
+    "@type":"JobPosting",
+    "title":"Executive\/Senior Executive - Partnerships Job in Multiple locations at Freecharge Payments Technology Private Limited",
+    "validThrough":"2021-09-11 00:00:00",
+    "applicantLocationRequirements":{
+        "@type":"Country","name":"India"},
+    "hiringOrganization":{
+        "@type":"Organization",
+        "name":"Freecharge Payments Technology Private Limited",
+        "sameAs":"https:\/\/careers.freecharge.in\/",
+        "logo":"https:\/\/s3-ap-southeast-1.amazonaws.com\/internshala-uploads\/google_logo\/610288c22a4fa1627556034.png"},
+    "employmentType":"[\"FULL_TIME\"]",
+    "jobLocation":[
+        {
+            "@type":"Place",
+            "address":{
+                "@type":"PostalAddress",
+                "streetAddress":null,
+                "postalCode":null,
+                "addressLocality":"Faridabad",
+                "addressRegion":"Faridabad",
+                "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Delhi",
+                    "addressRegion":null,
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Ghaziabad",
+                    "addressRegion":"Ghaziabad",
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Gurgaon",
+                    "addressRegion":"Gurgaon",
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Pune",
+                    "addressRegion":"Pune",
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Bangalore",
+                    "addressRegion":"Bangalore",
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Hyderabad",
+                    "addressRegion":"Ranga Reddy",
+                    "addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Mumbai",
+                    "addressRegion":"Mumbai","addressCountry":"India"}},
+            {"@type":"Place",
+                "address":{
+                    "@type":"PostalAddress",
+                    "streetAddress":null,
+                    "postalCode":null,
+                    "addressLocality":"Noida",
+                    "addressRegion":"Gautam Buddh Nagar",
+                    "addressCountry":"India"}}
+                    ],
+    "datePosted":"2021-08-12 17:52:11",
+    "responsibilities":"Key responsibilities:<br \/>\n<br \/>\n1. Work on merchant acquisition - acquire new merchants for a new line of business in your specific area allotted<br \/>\n2. Work on merchant retention - deploy BTL merchandise and drive transactions from the merchant's end by deploying campaigns and other innovative drives<br \/>\n3. Handle business operations - coordination between various internal and external stakeholders for merchant activation and query resolution<br \/>\n4. Work on lead management - maintain the entire lifecycle of a lead",
+    "salaryCurrency":"INR ",
+    "baseSalary":{
+        "@type":"MonetaryAmount",
+        "currency":"INR",
+        "value":{
+            "@type":"QuantitativeValue",
+            "value":3,"unitText":"LPA"
+            }},
+    "description":"<h5><strong>About Company:<\/strong><\/h5>Freecharge is an e-commerce\/payments website headquartered in Gurgaon. It provides an online facility to recharge any prepaid mobile phone, postpaid mobile, DTH, & data card in India. On 27 July 2017, Axis Bank acquired Freecharge for overall business operations.<br><br><h5><strong>About the Internship:<\/strong><\/h5>Key responsibilities:<br \/>\n<br \/>\n1. Work on merchant acquisition - acquire new merchants for a new line of business in your specific area allotted<br \/>\n2. Work on merchant retention - deploy BTL merchandise and drive transactions from the merchant's end by deploying campaigns and other innovative drives<br \/>\n3. Handle business operations - coordination between various internal and external stakeholders for merchant activation and query resolution<br \/>\n4. Work on lead management - maintain the entire lifecycle of a lead<br><br>    <div class='text-container who_can_apply'\n             >\n                                 <p style='\n                       margin-bottom: 4px;\n                       color: #484848;\n                       '>1. Bachelor&#39;s degree in business or management discipline would be preferred<\/p>\n                                       <\/p>   \n                    <\/div>\n    <br><br><h5><strong>Deadline:<\/strong><\/h5>2021-09-11 00:00:00<br><br><h5><strong>Other perks:<\/strong><\/h5>Informal dress code, 5 days a week<br><br><h5><strong>Skills required:<\/strong><\/h5>MS-Word, MS-Excel and Microsoft PowerApps"
+}

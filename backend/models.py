@@ -13,6 +13,7 @@ class non_interesting_url(models.Model):
 class Categories(models.Model):
     id = models.BigAutoField(primary_key= True)
     name = models.CharField(max_length=50)
+    syn = models.CharField(max_length=100, null= True, blank= True)
 
 class JobDB(models.Model):
     id = models.BigAutoField(primary_key=True)

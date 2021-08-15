@@ -12,6 +12,10 @@ from pprint import pprint
 import requests
 from bs4 import BeautifulSoup
 from .models import interesting_url, non_interesting_url, Categories, JobDB
+import sqlite3
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import euclidean_distances, cosine_similarity
+from gensim.summarization import keywords
 
 
 def dlt():
@@ -84,7 +88,6 @@ def internshala():
         il = non_interesting_url(url=el)
         il.save()
         print("Saved(Non interesting url) :> ", el)
-        
 
 
 def iimjobs():
@@ -113,7 +116,7 @@ def iimjobs():
         il = interesting_url(url=interesting_urll)
         il.save()
         print("Saved(interesting url) :> ", interesting_urll)
-        n = n +1
+        n = n + 1
         if n == 10:
             break
         # print(interesting_urll)
@@ -174,28 +177,65 @@ def cat_to_model():
     filename = os.path.join(base, 'data.xlsx')
     data = pd.read_excel(filename)
     # dh = data.head()
-    interest_list = pd.DataFrame(data, columns=['Interested_Group'])
+    interest_list = pd.DataFrame(
+        data, columns=['Interested_Group', 'Profession', 'Synonyms'])
+    i = 0
     for row in interest_list.values:
         # print(row[0])
-        category = Categories(name=row[0])
+        category = Categories(name=row[0], syn=str(row[1]) + " " + str(row[2]))
         category.save()
+        i = i + 1
         print("Saved(Category) :>", row[0])
 
 
-def set_category(text):
-    all_category = Categories.objects.all()
-    for cat in all_category:
-        nam = str(cat.name).lower()
-        for c in nam.split():
-            if c in text.lower().split():
-                return nam
+def set_category(title, desc):
+    cat = Categories.objects.all()
+    names = []
+    corpus = ['Uncategorized']
+    for i in cat:
+        names.append(i.name)
+        text = i.name + " " + i.syn
+        l = len(text.split(' '))
+        if l > 6:
+            x == 3
+        elif l > 2:
+            x = 2
+        else:
+            x = 1
+        try:
+            keyl = keywords(text, words=x, lemmatize=False)
+        except:
+            keyl = keywords(text, words=1, lemmatize=False)
+        corpus.append(keyl)
 
-    return "No available category detected"
+    vectorizer = CountVectorizer()
+    max = 0
+    text = title + " " + desc
+    keyl = keywords(text, words=9, lemmatize=True)
+    corpus.append(keyl.replace('\n', " "))
+    row_features = vectorizer.fit_transform(corpus).todense()
+    # print(len(row_features))
+    i = 0
+    mi = 0
+    for f in row_features[:-1]:
+        val = cosine_similarity(row_features[-1], f)[0][0]
+        if val > max:
+            max = val
+            mi = i
+        # print(val)
+        i = i + 1
+    corpus.pop(-1)
+    # print(max, " -- ", title, ' -- ', corpus[mi])
+    if mi == 0:
+        # print("uncate")
+        return "Uncategorized"
+    else:
+        # print(names[mi-1])
+        return names[mi-1]
 
 
 def get_details():
     int_li = interesting_url.objects.all()
-    
     for url in int_li:
         try:
             m_datas = scrape(str(url.url))
@@ -226,15 +266,17 @@ def get_details():
             except:
                 salary = "Data not available"
 
-            category = set_category(str(title))
+            category = str(set_category(str(title), str(desc)))
 
             Job = JobDB(url=url.url, title=title, description=desc,
-                        salary=salary, datePosted=dateposted, validThrough=valid, hiringOrganization = organizatiion, place = place, category = category)
+                        salary=salary, datePosted=dateposted, validThrough=valid, hiringOrganization=organizatiion, place=place, category=category)
             Job.save()
             print("Saved(Job Details) :>", title)
+
         except:
             print("bad")
             pass
+
 
 def manual_start():
     print("Deleting Previeus datas(if any)")
